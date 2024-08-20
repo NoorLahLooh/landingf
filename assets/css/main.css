@@ -1,2 +1,63 @@
 @import './base.css';
 
+body{
+    font-family: var(--mainfonts);
+    background-color: #eee;
+
+}
+.header{
+    background-color: #fff;
+    padding: 20px 0;
+
+}
+.header .logo{
+    display: flex;
+    gap: 2.6;
+    align-items: center;
+}
+
+.header .logo img{
+width: 35px;
+}
+/*
+.header .logo a{
+    font-family: var(--mainfonts);
+}
+*/
+.header .nav ul{
+    display: flex;
+    gap: 15px;
+    
+}
+.header .nav  li a{
+    color: #101928;
+}
+.active{
+    font-weight: 900;
+}
+ .auth{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+   
+ }
+ .auth a{
+    font-family: var(--subfonts);
+    border-radius: 10px;
+    font-weight: 700;
+ }
+ .auth .login{
+    border: 2px solid var(--maincolor);
+   
+    padding: 5.3541765213012695px 40.18113136291504px;
+    
+
+ }
+ .auth .Register{
+    
+    padding: 6.3541765213012695px 35.18113136291504px;
+    background-color: var(--maincolor);
+    color: #fff;
+ }
+
