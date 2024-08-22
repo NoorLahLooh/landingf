@@ -1,76 +1,100 @@
 @import './base.css';
 
-body{
+body {
     font-family: var(--mainfonts);
     background-color: #eee;
 
 }
-.menu{
+
+.menu {
     display: none;
 }
 
-.header{
+.header {
     background-color: #fff;
     padding: 20px 0;
 
 }
-.header .logo{
+
+.header .logo {
     display: flex;
     flex-wrap: wrap;
     gap: 2.6;
     align-items: center;
 }
 
-.header .logo img{
-width: 35px;
+.header .logo img {
+    width: 35px;
 }
 
-.header .nav ul{
+.header .nav ul {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    
+
 }
-.header .nav  li a{
+
+.header .nav li a {
     color: #101928;
 }
-.active{
+
+.active {
     font-weight: 900;
 }
- .auth{
+
+.auth {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
-    
-   
- }
- .auth a{
+
+
+}
+
+.auth a {
     font-family: var(--subfonts);
     border-radius: 10px;
     font-weight: 700;
- }
- .auth .login{
-    border: 2px solid var(--maincolor);
-   
-    padding: 5.3541765213012695px 40.18113136291504px;
-    
+}
 
- }
- .auth .Register{
-    
+.auth .login {
+    border: 2px solid var(--maincolor);
+
+    padding: 5.3541765213012695px 40.18113136291504px;
+
+
+}
+
+.auth .Register {
+
     padding: 6.3541765213012695px 35.18113136291504px;
     background-color: var(--maincolor);
     color: #fff;
- }
- 
+}
+
 @media screen and (max-width:992px) {
-    .nav{
+
+    .nav,
+    .auth {
         display: none;
     }
-    .menu{
+
+    .menu {
         display: block;
-        order:2 ;
+        order: 2;
     }
-    
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        width: calc(100% - 50px);
+    }
+
+    .header .logo img {
+        width: 20px;
+    }
+
+    .header .logo a {
+        font-size: 14px;
+    }
 }
