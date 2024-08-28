@@ -98,6 +98,102 @@ body {
         font-size: 14px;
     }
 }
+.courses{
+    padding: 20px;
+}
+.course-items,
+.course-description{
+
+    display: flex;
+    width: calc( ( 100% - 20px ) / 2);
+}
+.course-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.course-items .course{
+    width: calc( (100% - 40px) /2);
+}
+.course-card img{
+    width: 100%;
+    
+}
+.course-card{
+    position: relative;
+    
+}
+.course-info{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: flex-start;
+}
+.course-card span:last-of-type{
+    align-self: flex-end;
+}
+.course-card span:nth-child(1){
+    background-color: var(--maincolor);
+    padding: 3px;
+    
+}
+.course-details .row:last-of-type{
+    display: flex;
+    justify-content:flex-start;
+    gap: 15px;
+    font-family: 20px;
+    font-weight: 500;
+    color:  #969696;;
+}
+.views{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--maincolor);
+}
+.courses .row:first-of-type{
+    align-items: flex-start;
+}
+.course-description{
+flex-direction: column;
+display: flex;
+gap : 30px;
+
+}
+.course-description p:first-of-type{
+    font-family: var(--subfonts);
+    color: var(--maincolor);
+    font-size: 10px;
+}
+.course-description h2{
+    font-weight: 700;
+    font-size: 20px;
+    font-family: var(--mainfonts);
+}
+.course-description .desc{
+    color: #969696;
+    font-size: 15px;
+    font-family: var(--mainfonts);
+    font-weight:600 ;
+}
+.course-description a{
+    background-color: var(--maincolor);
+    width: 70px;
+    height: 20px;
+    font-family: var(--subfonts);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
 
 .testimonial {
 
@@ -165,11 +261,7 @@ body {
     ;
 }
 
-.testimonial2 img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
+
 
 @media screen and (max-width:768px) {
 
