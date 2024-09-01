@@ -3,6 +3,7 @@
 body {
     font-family: var(--mainfonts);
     background-color: #eee;
+   
 
 }
 
@@ -10,20 +11,17 @@ body {
     display: none;
 }
 
-.header{
-     background-color: #fff;
+.header {
+    background-color: #fff;
     padding: 20px 0;
-}
    
-
-
+   
+}
 .header .logo {
     display: flex;
     flex-wrap: wrap;
     gap: 2.6;
     align-items: center;
-   
-    
 }
 
 .header .logo img {
@@ -50,8 +48,6 @@ body {
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
-
-
 }
 
 .auth a {
@@ -62,14 +58,10 @@ body {
 
 .auth .login {
     border: 2px solid var(--maincolor);
-
     padding: 5.3541765213012695px 40.18113136291504px;
-
-
 }
 
 .auth .Register {
-
     padding: 6.3541765213012695px 35.18113136291504px;
     background-color: var(--maincolor);
     color: #fff;
@@ -102,55 +94,68 @@ body {
     }
 }
 
-.lets-begins{
+.lets-begins {
     background-color: #fff;
 }
-.lets-begins .row{
+
+.lets-begins .row {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 
 }
-.right-courses{
-    width: 500px;
+
+.right-courses {
+    width: 341px;
     display: flex;
     gap: 20px;
     flex-direction: column;
-    
+
 }
-.right-courses span{
+
+.right-courses span {
     font-family: var(--mainfonts);
     font-weight: 700;
-    font-size: 26px;
+    font-size: 50px;
     color: var(--maincolor);
 }
-.information{
+
+.information {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.information p:first-of-type{
+
+.information p:first-of-type {
     font-family: var(--subfonts);
     font-weight: 400;
     font-size: 10px;
     color: var(--maincolor);
 }
 
-.information p:nth-child(3){
+.information h1 {
+    font-size: 50px;
+    font-weight: 700;
+
+}
+
+.information p:nth-child(3) {
     color: #969696;
     font-size: 15px;
     font-weight: 400;
     font-family: var(--mainfonts);
 }
-.login{
+
+.login {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-.login a:first-of-type{
+
+.login a:first-of-type {
     color: #fff;
     background-color: var(--maincolor);
-    font-size:10px ;
+    font-size: 10px;
     font-weight: 700;
     font-family: var(--subfonts);
     padding: 7px 20px;
@@ -159,90 +164,112 @@ body {
 }
 
 
-.play-video{
+.play-video {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
 
-.play-video p{
+.play-video p {
     font-family: var(--subfonts);
     font-weight: 700;
     font-size: 12px;
 }
 
 
-.picture-of-girl{
+.picture-of-girl {
     display: flex;
     flex-grow: 1;
-    justify-content: space-evenly;
-}
-.picture-of-girl img{
-    width: 50%;
+    justify-content: flex-end;
 }
 
-.WHAT-WE-GIVE{
+.picture-of-girl img {
+    width: 50%;
+}
+@media screen and (max-width:1200px) {
+    .right-courses {
+        
+        width: 100%
+    }
+    .picture-of-girl{
+        width: 100%;
+        font-display: flex;
+        justify-content: center;
+    }
+}
+
+.WHAT-WE-GIVE {
     background: #f5f5f5;
     padding: 40px;
 }
 
-.WHAT-WE-GIVE .row{
-gap: 40px;
+.WHAT-WE-GIVE .row {
+    display: flex;
+
+
 }
 
-.course-coals{
-    width: 350px;
+.course-coals {
+    width: 340px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
 }
-.course-coals p:first-of-type{
+
+.course-coals p:first-of-type {
     font-family: var(--subfonts);
     font-weight: 400;
     font-size: 10px;
-    color: var(--maincolor); 
+    color: var(--maincolor);
 }
-.course-coals h2{
+
+.course-coals h2 {
     font-family: var(--mainfonts);
     color: #000;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 700;
 }
-.course-coals p:last-of-type{
+
+.course-coals p:last-of-type {
     color: #969696;
     font-size: 15px;
     font-weight: 400;
     font-family: var(--mainfonts);
 }
 
-.course-features{
+.course-features {
     display: flex;
     flex-grow: 1;
-    gap: 10px;
+    gap: 1px;
+    justify-content: space-evenly;
 
 }
-.course-features img{
+
+.course-features img {
     background-color: #fff;
     width: 30px;
-    height:30px ;
-    border-radius:50% ;
+    height: 30px;
+    border-radius: 50%;
 }
-.course-features p:first-of-type{
+
+.course-features p:first-of-type {
     font-family: var(--subfonts);
     font-weight: 700;
     font-size: 15px;
 }
-.course-features p:last-of-type{
+
+.course-features p:last-of-type {
     font-family: var(--mainfonts);
     font-weight: 400;
     font-size: 10px;
     color: #dddddd;
 }
+
 .Professional-Teacher,
 .Course-Certificate,
-.interesting-learning{
+.interesting-learning {
     width: 230px;
     height: 150px;
     background-color: var(--maincolor);
@@ -256,160 +283,188 @@ gap: 40px;
     align-items: flex-start;
 }
 
-@media screen and ( max-width:1200px ){
- .WHAT-WE-GIVE .row
-  {
-   display: flex ; 
-   flex-direction: column;
-   width: 100%
-   
-  }  
+@media screen and (max-width:1200px) {
+    .WHAT-WE-GIVE .row {
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
 }
-@media screen and ( max-width:990px ){
-    .course-features
-    {
+
+@media screen and (max-width:990px) {
+    .course-features {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        
+
         justify-content: center;
     }
-   }
-.SELECTED-COURSE{
+}
+
+.SELECTED-COURSE {
     padding: 40px;
     background-color: var(--maincolor);
 }
-.SELECTED-COURSE .row{
+
+.SELECTED-COURSE .row {
     display: flex;
-    gap: 20px;
+    gap: 10px;
+
 }
-.picture-of-people 
-{
- width: 600px;   
+
+.picture-of-people {
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
-.picture-of-people img{
-    width: 400px;
+
+
+.picture-of-people img {
+    width: 70%;
 }
-.People-Taking-Courses{
+
+.People-Taking-Courses {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    flex-grow: 1;
+    width: 349px;
     gap: 20px;
 }
 
-.info-SELECTED-COURSE{
+.info-SELECTED-COURSE {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     gap: 20px;
 }
-.info-SELECTED-COURSE p:first-of-type{
+
+.info-SELECTED-COURSE p:first-of-type {
     color: #f0c932;
     font-family: var(--subfonts);
     font-weight: 400;
     font-size: 10px;
 }
-.info-SELECTED-COURSE h2{
+
+.info-SELECTED-COURSE h2 {
     color: #fff;
     font-family: var(--mainfonts);
     font-weight: 700;
     font-size: 30px;
 }
-.info-SELECTED-COURSE p:last-of-type{
+
+.info-SELECTED-COURSE p:last-of-type {
     color: #dddddd;
     font-family: var(--mainfonts);
     font-weight: 700;
     font-size: 12px;
 }
-.number{
+
+.number {
     display: flex;
     justify-content: space-between
 }
-.number span{
-    color:#f0c932; ;
-   font-family: var(--subfonts);
-   font-size: 15px;
-   font-weight: 700;
+
+.number span {
+    color: #f0c932;
+    ;
+    font-family: var(--subfonts);
+    font-size: 15px;
+    font-weight: 700;
 }
-.number p{
+
+.number p {
     color: #dddddd;
-   font-family: var(--subfonts);
-   font-size: 10px;
-   font-weight: 400;
+    font-family: var(--subfonts);
+    font-size: 10px;
+    font-weight: 400;
 }
-@media screen  and ( max-width:1200px){
-   .SELECTED-COURSE .row{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-   } 
-   .picture-of-people{
-    display: flex;
-    justify-content: center;
-   }
-}
-@media screen  and (max-width:769px)  {
-    .picture-of-people{
-        width: 50%;
+
+@media screen and (max-width:1200px) {
+    .SELECTED-COURSE .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+
+    .picture-of-people {
         display: flex;
         justify-content: center;
-       }
-.People-Taking-Courses{
-    width: 50%;
-
-}
-.number{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-    
+    }
 }
 
-.courses{
+@media screen and (max-width:769px) {
+    .picture-of-people img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .People-Taking-Courses {
+        width: 100%;
+
+    }
+
+    .number {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+.courses {
     padding: 20px;
     background-color: #fff;
-    
+
 }
-.courses .row{
+
+.courses .row {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .course-items,
-.course-description{
-    width: calc(( 100% -  20px ) /2);
+.course-description {
+    width: calc((100% - 20px) /2);
 }
 
-.course-items{
+.course-items {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
 }
-.course-items .course{
-    width: calc( (100% - 40px) /2);
+
+.course-items .course {
+    width: calc((100% - 40px) /2);
 }
-.course-card{
+
+.course-card {
     position: relative;
-    
+
 }
-.course-card img{
+
+.course-card img {
     width: 100%;
-    
+    filter: brightness(50%);
+
 }
-.course-card span:nth-child(1){
+
+.course-card span:nth-child(1) {
     background-color: var(--maincolor);
     padding: 3px;
-    
+
 }
-.course-card span:last-of-type{
+
+.course-card span:last-of-type {
     align-self: flex-end;
 }
 
-.course-info{
+.course-info {
     color: #fff;
     position: absolute;
     top: 0;
@@ -417,52 +472,60 @@ gap: 40px;
     right: 0;
     left: 0;
     display: flex;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
     align-items: flex-start;
 }
 
 
-.course-details .row:last-of-type{
+.course-details .row:last-of-type {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     gap: 15px;
     font-family: 20px;
     font-weight: 500;
-    color:  #969696;;
+    color: #969696;
+    ;
 }
-.views{
+
+.views {
     font-size: 15px;
     font-weight: 400;
     color: var(--maincolor);
 }
-.courses .row:first-of-type{
+
+.courses .row:first-of-type {
     align-items: flex-start;
 }
-.course-description{
-flex-direction: column;
-display: flex;
-gap : 30px;
+
+.course-description {
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
 
 }
-.course-description p:first-of-type{
+
+.course-description p:first-of-type {
     font-family: var(--subfonts);
     color: var(--maincolor);
     font-size: 10px;
 }
-.course-description h2{
+
+.course-description h2 {
     font-weight: 700;
     font-size: 20px;
     font-family: var(--mainfonts);
 }
-.course-description .desc{
+
+.course-description .desc {
     color: #969696;
     font-size: 15px;
     font-family: var(--mainfonts);
-    font-weight:600 ;
+    font-weight: 600;
 }
-.course-description a{
+
+.course-description a {
     background-color: var(--maincolor);
     width: 70px;
     height: 20px;
@@ -474,29 +537,32 @@ gap : 30px;
     border-radius: 5px;
     text-align: center;
 }
-@media screen and ( max-width:1200px) {
-    .course-items{
-        width: 100%; 
+
+@media screen and (max-width:1200px) {
+    .course-items {
+        width: 100%;
     }
-    .course-description{
+
+    .course-description {
         width: 100%;
     }
 }
 
-@media screen and ( max-width:796px) {
-    .course-items{
+@media screen and (max-width:796px) {
+    .course-items {
         display: flex;
-        flex-direction:column ;
+        flex-direction: column;
         gap: 20px;
-       
-        
+
+
     }
-   
-    
-    
+
+
+
 }
+
 .testimonial::after {
-    content:'';
+    content: '';
     border-bottom: 20px solid red;
     border-top: 20px solid green;
     border-right: 20px solid blue;
@@ -504,7 +570,7 @@ gap : 30px;
     position: absolute;
     top: 0;
     right: 0;
-    
+
 }
 
 .testimonial {
@@ -512,15 +578,18 @@ gap : 30px;
     padding: 50px 0;
     background-color: #fff;
     position: relative;
+
 }
+
 .testimonial h2 {
     text-align: center;
+
 }
 
 .testimonial .row {
     gap: 40px;
-    
-    
+
+
 }
 
 .testimonial1 {
@@ -533,7 +602,7 @@ gap : 30px;
     padding: 20px;
     box-shadow: 0px 8.23719596862793px 8.23719596862793px rgba(0, 0, 0, 0.1);
     ;
-   
+
 }
 
 .user-info {
@@ -572,8 +641,9 @@ gap : 30px;
     box-sizing: border-box;
     box-shadow: 0px 8.23719596862793px 8.23719596862793px rgba(0, 0, 0, 0.1);
     ;
-  
+
 }
+
 @media screen and (max-width:768px) {
 
     .testimonial1,
@@ -581,6 +651,7 @@ gap : 30px;
         width: 100%;
     }
 }
+
 .footer {
     background-color: #393E46;
     color: #fff;
